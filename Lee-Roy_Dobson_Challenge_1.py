@@ -10,6 +10,7 @@ def suit():
         return("Clubs")
     elif randomnumber == 3:
         return("Hearts")
+    else:
         return("Diamonds")
 
 #Function for generating the card rank
