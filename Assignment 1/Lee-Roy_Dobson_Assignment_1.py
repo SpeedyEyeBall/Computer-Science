@@ -15,7 +15,7 @@ def suit():
 
 #Function for generating the card rank
 def rank():
-    #Generate a random number between 1 and 3 inclusive
+    #Generate a random number between 1 and 13 inclusive
     randomnumber = randint(1,13)
     #Check if the number corresponds with a rank
     if randomnumber == 1:
