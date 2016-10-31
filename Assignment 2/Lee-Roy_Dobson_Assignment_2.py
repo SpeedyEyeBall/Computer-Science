@@ -53,6 +53,8 @@ def main():
             print("Correct! The next card was the %s of %s") % (card2['rank'], card2['suit'])
         else:
             print("Wrong! The next card was %s of %s.")% (card2['rank'], card2['suit'])
+    else:
+        print("That was not an option. Type either [Higher] or [Lower]")
    
 def cardScore(card):
     cardScoreVal = 0
@@ -67,5 +69,6 @@ def cardScore(card):
     else:
         cardScoreVal = card['rank']
     return(cardScoreVal)
-
-main()
+while True:
+    main()
+    print("===============================================")
