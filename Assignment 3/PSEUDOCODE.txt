@@ -1,0 +1,20 @@
+OUTPUT "Information on Chinese new year"
+IF userWantsCookie() = True THEN
+	OUTPUT giveFortune()
+ELSE
+	OUTPUT "Enjoy the new year"
+ENDIF
+
+FUNCTION userWantsCookie()
+	userAnswer ← USERINPUT
+	WHILE True
+	CASE userAnswer OF
+		'yes': RETURN(True)
+		'no': RETURN(False)
+	ELSE
+		OUTPUT "Not a valid input"
+		userAnswer ← USERINPUT
+	ENDCASE
+	
+FUNCTION giveFortune()
+	RETURN(READLINE('fortunes.txt', randomNumber))
